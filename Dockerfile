@@ -1,5 +1,5 @@
 FROM ubuntu:14.04
-RUN apt-get update; apt-get install -y ruby rubygems git
+RUN apt-get update; apt-get install -y ruby
 RUN gem install bundler
 ADD . /app
 RUN cd /app && bundle install
